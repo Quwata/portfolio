@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:black;
+  color:white;
+}
+header {
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 10000;
+}
+p{text-align: center;}
+h1{text-align: center;}
+
+img{
+  text-align: center
+}
+
+body {
+  margin: 0;
+}
+
+.glitch {
+  background: #000 no-repeat center;
+  background-size: 0;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.glitch::before, .glitch::after,
+.glitch .channel {
+  background: inherit;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.glitch::before {
+  animation: glitch-before 3s linear infinite alternate both;
+  content: "";
+}
+@keyframes glitch-before {
+  0% {
+    -webkit-clip-path: polygon(0% 49.8668414574%, 100% 49.8668414574%, 100% 51.9930415849%, 0% 51.9930415849%);
+            clip-path: polygon(0% 49.8668414574%, 100% 49.8668414574%, 100% 51.9930415849%, 0% 51.9930415849%);
+    transform: translate(1.3536838924%, -0.1746875165%);
+  }
+  2% {
+    -webkit-clip-path: polygon(0% 74.4728001908%, 100% 74.4728001908%, 100% 78.0218179818%, 0% 78.0218179818%);
+            clip-path: polygon(0% 74.4728001908%, 100% 74.4728001908%, 100% 78.0218179818%, 0% 78.0218179818%);
+    transform: translate(3.4847434505%, -0.2250500055%);
+  }
+  4% {
+    -webkit-clip-path: polygon(0% 18.7500654752%, 100% 18.7500654752%, 100% 26.9512900105%, 0% 26.9512900105%);
+            clip-path: polygon(0% 18.7500654752%, 100% 18.7500654752%, 100% 26.9512900105%, 0% 26.9512900105%);
+    transform: translate(-6.128866401%, 0.4027829423%);
+  }
+  6% {
+    -webkit-clip-path: polygon(0% 1.4366549059%, 100% 1.4366549059%, 100% 11.2906562401%, 0% 11.2906562401%);
+            clip-path: polygon(0% 1.4366549059%, 100% 1.4366549059%, 100% 11.2906562401%, 0% 11.2906562401%);
+    transform: translate(7.2651596959%, 0.3924215937%);
+  }
+  8% {
+    -webkit-clip-path: polygon(0% 63.1402048581%, 100% 63.1402048581%, 100% 65.6888978421%, 0% 65.6888978421%);
+            clip-path: polygon(0% 63.1402048581%, 100% 63.1402048581%, 100% 65.6888978421%, 0% 65.6888978421%);
+    transform: translate(5.268375962%, 0.4149005499%);
+  }
+  10% {
+    -webkit-clip-path: polygon(0% 55.1016887695%, 100% 55.1016887695%, 100% 56.4725390178%, 0% 56.4725390178%);
+            clip-path: polygon(0% 55.1016887695%, 100% 55.1016887695%, 100% 56.4725390178%, 0% 56.4725390178%);
+    transform: translate(-0.6274721342%, 0.2793091205%);
+  }
+  12% {
+    -webkit-clip-path: polygon(0% 32.2927227205%, 100% 32.2927227205%, 100% 35.6546350731%, 0% 35.6546350731%);
+            clip-path: polygon(0% 32.2927227205%, 100% 32.2927227205%, 100% 35.6546350731%, 0% 35.6546350731%);
+    transform: translate(6.5579985388%, -0.1555231866%);
+  }
+  14% {
+    -webkit-clip-path: polygon(0% 27.9388439541%, 100% 27.9388439541%, 100% 31.1081858172%, 0% 31.1081858172%);
+            clip-path: polygon(0% 27.9388439541%, 100% 27.9388439541%, 100% 31.1081858172%, 0% 31.1081858172%);
+    transform: translate(7.9317484807%, -0.3490389707%);
+  }
+  16% {
+    -webkit-clip-path: polygon(0% 25.7246972454%, 100% 25.7246972454%, 100% 27.8119289991%, 0% 27.8119289991%);
+            clip-path: polygon(0% 25.7246972454%, 100% 25.7246972454%, 100% 27.8119289991%, 0% 27.8119289991%);
+    transform: translate(-6.841201266%, -0.107710313%);
+  }
+  18% {
+    -webkit-clip-path: polygon(0% 40.9922970387%, 100% 40.9922970387%, 100% 42.2294376685%, 0% 42.2294376685%);
+            clip-path: polygon(0% 40.9922970387%, 100% 40.9922970387%, 100% 42.2294376685%, 0% 42.2294376685%);
+    transform: translate(1.3419225765%, -0.4762578505%);
+  }
+  20%, 100% {
+    -webkit-clip-path: none;
+            clip-path: none;
+    transform: none;
+  }
+}
+.glitch::after {
+  animation: glitch-after 3s linear infinite alternate both;
+  content: "";
+}
+@keyframes glitch-after {
+  0% {
+    -webkit-clip-path: polygon(0% 58.1680636114%, 100% 58.1680636114%, 100% 67.6282273126%, 0% 67.6282273126%);
+            clip-path: polygon(0% 58.1680636114%, 100% 58.1680636114%, 100% 67.6282273126%, 0% 67.6282273126%);
+    transform: translate(-4.7582752253%, 0.0487008463%);
+  }
+  2% {
+    -webkit-clip-path: polygon(0% 76.1625631123%, 100% 76.1625631123%, 100% 82.8248200259%, 0% 82.8248200259%);
+            clip-path: polygon(0% 76.1625631123%, 100% 76.1625631123%, 100% 82.8248200259%, 0% 82.8248200259%);
+    transform: translate(-6.4057781683%, 0.2571992247%);
+  }
+  4% {
+    -webkit-clip-path: polygon(0% 29.9143290113%, 100% 29.9143290113%, 100% 35.6823300529%, 0% 35.6823300529%);
+            clip-path: polygon(0% 29.9143290113%, 100% 29.9143290113%, 100% 35.6823300529%, 0% 35.6823300529%);
+    transform: translate(7.1736338161%, -0.2425683491%);
+  }
+  6% {
+    -webkit-clip-path: polygon(0% 64.5038546956%, 100% 64.5038546956%, 100% 73.1592120165%, 0% 73.1592120165%);
+            clip-path: polygon(0% 64.5038546956%, 100% 64.5038546956%, 100% 73.1592120165%, 0% 73.1592120165%);
+    transform: translate(6.6533766151%, 0.0629030036%);
+  }
+  8% {
+    -webkit-clip-path: polygon(0% 10.1341409825%, 100% 10.1341409825%, 100% 12.9291028811%, 0% 12.9291028811%);
+            clip-path: polygon(0% 10.1341409825%, 100% 10.1341409825%, 100% 12.9291028811%, 0% 12.9291028811%);
+    transform: translate(2.740942985%, 0.4725708217%);
+  }
+  10% {
+    -webkit-clip-path: polygon(0% 10.1152572737%, 100% 10.1152572737%, 100% 14.7675703435%, 0% 14.7675703435%);
+            clip-path: polygon(0% 10.1152572737%, 100% 10.1152572737%, 100% 14.7675703435%, 0% 14.7675703435%);
+    transform: translate(2.1289326639%, 0.1420824983%);
+  }
+  12% {
+    -webkit-clip-path: polygon(0% 4.097021209%, 100% 4.097021209%, 100% 8.2025160309%, 0% 8.2025160309%);
+            clip-path: polygon(0% 4.097021209%, 100% 4.097021209%, 100% 8.2025160309%, 0% 8.2025160309%);
+    transform: translate(-5.341052104%, 0.1076465739%);
+  }
+  14% {
+    -webkit-clip-path: polygon(0% 70.026077216%, 100% 70.026077216%, 100% 75.6922162938%, 0% 75.6922162938%);
+            clip-path: polygon(0% 70.026077216%, 100% 70.026077216%, 100% 75.6922162938%, 0% 75.6922162938%);
+    transform: translate(0.0880446657%, -0.3380876572%);
+  }
+  16% {
+    -webkit-clip-path: polygon(0% 48.3390512156%, 100% 48.3390512156%, 100% 50.3930496476%, 0% 50.3930496476%);
+            clip-path: polygon(0% 48.3390512156%, 100% 48.3390512156%, 100% 50.3930496476%, 0% 50.3930496476%);
+    transform: translate(2.3413007855%, -0.0687048548%);
+  }
+  18% {
+    -webkit-clip-path: polygon(0% 53.6089932098%, 100% 53.6089932098%, 100% 58.1849245432%, 0% 58.1849245432%);
+            clip-path: polygon(0% 53.6089932098%, 100% 53.6089932098%, 100% 58.1849245432%, 0% 58.1849245432%);
+    transform: translate(7.9467888097%, 0.2577498385%);
+  }
+  20%, 100% {
+    -webkit-clip-path: none;
+            clip-path: none;
+    transform: none;
+  }
+}
+.glitch .channel {
+  mix-blend-mode: screen;
+}
+.glitch .channel::before {
+  bottom: 0;
+  content: "";
+  display: block;
+  mix-blend-mode: multiply;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.glitch .r {
+  animation: rgb-shift-r 3s steps(1, jump-end) infinite alternate both;
+}
+@keyframes rgb-shift-r {
+  0% {
+    transform: translate(0.6812114742%, 0.4977296896%);
+  }
+  2% {
+    transform: translate(-0.7643193679%, 0.4453538966%);
+  }
+  4% {
+    transform: translate(-1.2598173278%, -0.3919707802%);
+  }
+  6% {
+    transform: translate(-1.259573885%, 0.2671016383%);
+  }
+  8% {
+    transform: translate(-1.1163349979%, 0.2265725466%);
+  }
+  10% {
+    transform: translate(1.1783210223%, 0.2994956662%);
+  }
+  12% {
+    transform: translate(-1.078710442%, 0.0004474475%);
+  }
+  14% {
+    transform: translate(-0.6136293964%, -0.4932447853%);
+  }
+  16% {
+    transform: translate(1.1028035275%, 0.4569590333%);
+  }
+  18% {
+    transform: translate(-0.6101100843%, -0.1909058228%);
+  }
+  20%, 100% {
+    transform: none;
+  }
+}
+.glitch .r::before {
+  background: #f00;
+}
+.glitch .g {
+  animation: rgb-shift-g 3s steps(1, jump-end) infinite alternate both;
+}
+@keyframes rgb-shift-g {
+  0% {
+    transform: translate(1.2707583856%, 0.1154262598%);
+  }
+  2% {
+    transform: translate(0.3116168364%, 0.0013528532%);
+  }
+  4% {
+    transform: translate(0.5209172722%, 0.1283802399%);
+  }
+  6% {
+    transform: translate(0.8999770732%, -0.4322560988%);
+  }
+  8% {
+    transform: translate(-0.422172166%, -0.4348147637%);
+  }
+  10% {
+    transform: translate(-0.3268021955%, -0.3408953757%);
+  }
+  12% {
+    transform: translate(-0.052820088%, -0.1378670891%);
+  }
+  14% {
+    transform: translate(0.6032951003%, -0.2528280292%);
+  }
+  16% {
+    transform: translate(1.7830102067%, -0.1805586086%);
+  }
+  18% {
+    transform: translate(1.6001030313%, -0.158935919%);
+  }
+  20%, 100% {
+    transform: none;
+  }
+}
+.glitch .g::before {
+  background: #0f0;
+}
+.glitch .b {
+  animation: rgb-shift-b 3s steps(1, jump-end) infinite alternate both;
+}
+@keyframes rgb-shift-b {
+  0% {
+    transform: translate(-0.1575262851%, -0.3034153874%);
+  }
+  2% {
+    transform: translate(-0.313593305%, 0.1197521422%);
+  }
+  4% {
+    transform: translate(1.1207415033%, -0.0567221864%);
+  }
+  6% {
+    transform: translate(-1.5740734683%, -0.1695713705%);
+  }
+  8% {
+    transform: translate(1.0628802997%, 0.4633678673%);
+  }
+  10% {
+    transform: translate(-0.6484568624%, 0.1257029776%);
+  }
+  12% {
+    transform: translate(-1.430215921%, -0.3074574819%);
+  }
+  14% {
+    transform: translate(0.4224593904%, 0.362557824%);
+  }
+  16% {
+    transform: translate(-1.7633131575%, -0.278436432%);
+  }
+  18% {
+    transform: translate(1.204608907%, 0.3976862507%);
+  }
+  20%, 100% {
+    transform: none;
+  }
+}
+.glitch .b::before {
+  background: #00f;
+}/*# sourceMappingURL=style.css.map */
+
+.ityped-cursor {
+  font-size: 2.2rem;
+  opacity: 1;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+} 
+
+@keyframes blink {
+  100% {
+      opacity: 0;
+  }
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.area {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.blinking{
+	-webkit-animation:blink 1.5s ease-in-out infinite alternate;
+    -moz-animation:blink 1.5s ease-in-out infinite alternate;
+    animation:blink 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.chr_color{
+  color:#f00 ;
+}

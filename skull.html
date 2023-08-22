@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>MEGA ROMAN14</title>
+</head>
+<body>
+    <script>
+     history.pushState(null, null, location.href);
+window.addEventListener('popstate', (e) => {
+  history.go(1);
+});
+    </script>
+    <style>
+        #sec0{
+            background-image: url(images/skull-face-j.png);
+        }
+        #sec1{
+            background-image: url(images/megaroman14_skull-visual2.png);
+        }
+        #sec2{
+            background-image: url(images/megaroman14_skull-visual3.png);
+        }
+        #sec3{
+        text-align: center;
+        }
+    </style>
+    
+    <header>
+        <nav id="global-nav">
+            <ul>
+                <span class="blinking">
+                <a href="#sec0"><img src="images/skull-face.png" alt="スカルフェイス"></a>
+                <a href="#sec1"><img src="images/tokutei-kigyou-akugyou.png" alt="特定企業の悪行"></a>
+                <a href="#sec2"><img src="images/uivr-goggles_fuyou.png" alt="UIVRゴーグルなど不要"></a>
+                <a href="#sec3"><img src="images/shinjitsu.png" alt="真実"></a>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="area">
+            <div id="sec0" class="glitch">
+            <div class="channel r"></div>
+            <div class="channel g"></div>
+            <div class="channel b"></div>
+        </div>
+        </section>
+
+        <section class="area">
+        <div id="sec1" class="glitch">
+            <div class="channel r"></div>
+            <div class="channel g"></div>
+            <div class="channel b"></div>
+        </div>
+        </section>
+
+        <section class="area">
+            <div id="sec2" class="glitch">
+            <div class="channel r"></div>
+            <div class="channel g"></div>
+            <div class="channel b"></div>
+        </div>
+        </section>
+
+        <section class="area">
+        <div id="sec3">
+            <a href="concept.html"><img src="images/shinjitsu-ctt.png" alt="真実"></a>
+        </div>
+        </section>
+    </div>
+
+</body>

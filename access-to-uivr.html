@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/index.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <META http-equiv="Refresh" content="12.5;URL=uivr.html">
+    <title>Access to UIVR</title>
+    <style>
+        body {
+            margin: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image:url();
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size:contain;
+      background-color:black;
+        }
+    </style>
+<body>
+    <span id="ityped"></span>
+    <script>
+    ityped.init(document.querySelector("#ityped"), {
+     strings: ['製品番号およびユーザーIDを照合中…','………','KGK-04 ID:04649 の照合を完了','UIVRに接続します'],
+    })
+    </script>
+</body>
